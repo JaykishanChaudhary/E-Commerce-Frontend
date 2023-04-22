@@ -1,0 +1,30 @@
+.cardcontainer{
+    height: 23rem;
+    width: 15rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0 0 0 0.5);
+}
+
+.description{
+    height: 1.5rem;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+img{
+    margin: 0;
+    height:50%;
+    width:100%;
+}
+
+#submitbutton{
+    height: 2rem;
+    width: 3rem;
+    border-radius: 20px;
+    background-color: rgb(68, 121, 237);
+    border: none;
+}

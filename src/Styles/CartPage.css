@@ -1,0 +1,45 @@
+#cartdetail{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    gap:4rem;
+    height: 3rem;
+    width: 35rem;
+    border: 1px solid brown;
+    margin-left: 23rem;
+    background-color: rgb(211, 62, 224);
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+#subtotal{
+    height: 1.5rem;
+    width:8rem;
+    background-color: rgb(211, 62, 224);
+    font-weight: 700;
+    border-radius: 5px;
+    justify-content: center;
+    text-align:center;
+    margin-left: 32rem;
+}
+
+.cartdescription{
+}
+
+#buttondiv{
+    display: flex;
+    flex-direction: row wrap;
+    gap:4rem;
+}
+
+#buybutton{
+    height: 1.5rem;
+    width:8rem;
+    background-color: rgb(211, 62, 224);
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+

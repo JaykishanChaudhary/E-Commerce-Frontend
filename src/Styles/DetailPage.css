@@ -1,0 +1,57 @@
+.mainbox{
+    min-height: 20rem;
+    min-width: 45rem;
+    /* border: 1px solid brown; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row wrap;
+    margin-top: 1rem;
+}
+
+#productimage{
+    height: 22rem;
+    width: 40rem;
+    border-radius: 10px;
+    margin-right: auto;
+    top: 2rem;
+}
+
+#productdescription{
+    width: 15rem;
+    text-align: center;
+    font-style: italic;
+}
+
+#productprice{
+    font-size: 2rem;
+}
+
+#cartimage{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 33rem;
+    margin-top: 1.5rem;
+    /* padding: 0.5rem; */
+}
+
+.headpart{
+    display: flex; 
+    flex-direction: row wrap;
+    justify-content: center;
+}
+
+#headpart1{
+    margin-left: 30rem;
+}
+
+.descriptionbox{
+    margin:auto;
+}
+
+#cartbutton{
+    height: 2rem;
+    width: 6rem;
+    border-radius: 20px;
+    background-color: rgb(68, 121, 237);
+    border: none;
+}
