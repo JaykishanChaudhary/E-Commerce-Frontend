@@ -13,7 +13,7 @@ function CartPage() {
 
   async function GetCartData() {
     await axios
-      .get("http://localhost:5000/GetCart")
+      .get("https://e-commerce-website-backend.onrender.com/GetCart")
       .then((Response) => {
         SetCartData(Response.data.result);
         console.log(CartData);
@@ -25,9 +25,9 @@ function CartPage() {
 
   async function HandlePay(){
 
-     const {data:{key}}= await  axios.get('http://localhost:5000/getKey')
+     const {data:{key}}= await  axios.get('https://e-commerce-website-backend.onrender.com/getKey')
 
-     const {data:{order}}=await  axios.post('http://localhost:5000/PayPost',{data:{
+     const {data:{order}}=await  axios.post('https://e-commerce-website-backend.onrender.com/PayPost',{data:{
             amount:Subtotal
         }})
 
