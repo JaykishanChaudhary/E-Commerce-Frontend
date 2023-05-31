@@ -23,7 +23,7 @@ function DetailPage(){
 
     function GoToCart(){
         nevigate('/CartPage');
-        axios.post('http://localhost:5000/CartPost',{
+        axios.post('https://e-commerce-website-backend1.onrender.com/CartPost',{
             data:{
                 count:Count,
                 amount:Amount,

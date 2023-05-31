@@ -13,7 +13,7 @@ function CartPage() {
 
   async function GetCartData() {
     await axios
-      .get("http://localhost:5000/GetCart")
+      .get("https://e-commerce-website-backend1.onrender.com/GetCart")
       .then((Response) => {
         SetCartData(Response.data.result);
         console.log(CartData);
@@ -25,13 +25,13 @@ function CartPage() {
 
   async function HandlePay(){
 
-     const {data:{key}}= await  axios.get('http://localhost:5000/getKey')
+     const {data:{key}}= await  axios.get('https://e-commerce-website-backend1.onrender.com/getKey')
 
-     const {data:{order}}=await  axios.post('http://localhost:5000/PayPost',{data:{
+     const {data:{order}}=await  axios.post('https://e-commerce-website-backend1.onrender.com/PayPost',{data:{
             amount:Subtotal
         }})
 
-
+        console.log(order)
 
         const options = {
             key:key, // Enter the Key ID generated from the Dashboard
@@ -41,7 +41,7 @@ function CartPage() {
             description: "Test Transaction",
             image: "https://example.com/your_logo",
             order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-            callback_url: "http://localhost:5000/PayPostVarification",
+            callback_url: "https://e-commerce-website-backend1.onrender.com/PayPostVarification",
             prefill: {
                 name: "Gaurav Kumar", //your customer's name
                 email: "gaurav.kumar@example.com",
@@ -54,6 +54,7 @@ function CartPage() {
                 "color": "#6699FFs"
             }
         };
+        console.log(window);
         const razor= new window.Razorpay(options);
         razor.open();
         

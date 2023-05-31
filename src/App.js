@@ -4,6 +4,7 @@ import LandingPage from './Components/LandingPage';
 import {BrowserRouter,  Routes,Route} from 'react-router-dom';
 import DetailPage from './Components/DetailPage';
 import CartPage from './Components/CartPage';
+import Checkoutsucess from './Components/Checkoutsucess';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<LandingPage/>}/>
         <Route path='/DetailPage' element={<DetailPage/>}/>
         <Route path='/CartPage' element={<CartPage/>}/>
+        <Route path='/checkoutsucess' element={<Checkoutsucess/>}/>
       </Routes>
       </BrowserRouter>
     </div>

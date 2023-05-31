@@ -9,7 +9,7 @@ function LandingPage(){
     const [Information,setInformation]=useState([])
   
     function GetData(){
-        axios.get('http://localhost:5000/getproduct').then((response)=>{
+        axios.get('https://e-commerce-website-backend1.onrender.com/getproduct').then((response)=>{
             console.log(response.data.result);
             setInformation(response.data.result);
             console.log(Information,'information')
